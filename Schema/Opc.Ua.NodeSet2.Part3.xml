@@ -586,6 +586,24 @@
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
     </References>
   </UAVariable>
+  <UADataType NodeId="i=7594" BrowseName="EnumValueType">
+    <DisplayName>EnumValueType</DisplayName>
+    <Description>A mapping between a value of an enumerated type and a name and description.</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
+    </References>
+    <Definition Name="EnumValueType">
+      <Field Name="Value" DataType="i=8">
+        <Description>The value of the enumeration.</Description>
+      </Field>
+      <Field Name="DisplayName" DataType="i=21">
+        <Description>Human readable name for the value.</Description>
+      </Field>
+      <Field Name="Description" DataType="i=21">
+        <Description>A description of the value.</Description>
+      </Field>
+    </Definition>
+  </UADataType>
   <UAVariable NodeId="i=3071" BrowseName="EnumValues" DataType="i=7594" ValueRank="1">
     <DisplayName>EnumValues</DisplayName>
     <Description>The human readable strings associated with the values of an enumerated value (when values have no sequence).</Description>
@@ -1478,24 +1496,6 @@
       </Field>
       <Field Name="Description" DataType="i=21">
         <Description>The description for the argument.</Description>
-      </Field>
-    </Definition>
-  </UADataType>
-  <UADataType NodeId="i=7594" BrowseName="EnumValueType">
-    <DisplayName>EnumValueType</DisplayName>
-    <Description>A mapping between a value of an enumerated type and a name and description.</Description>
-    <References>
-      <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
-    </References>
-    <Definition Name="EnumValueType">
-      <Field Name="Value" DataType="i=8">
-        <Description>The value of the enumeration.</Description>
-      </Field>
-      <Field Name="DisplayName" DataType="i=21">
-        <Description>Human readable name for the value.</Description>
-      </Field>
-      <Field Name="Description" DataType="i=21">
-        <Description>A description of the value.</Description>
       </Field>
     </Definition>
   </UADataType>
